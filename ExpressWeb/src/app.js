@@ -5,19 +5,21 @@ const port=process.env.PORT ||80;
 const path =require('path');
 
 const staticPath= path.join(__dirname,'../public')
-
 app.use(express.static(staticPath));
+
+app.set('view engine','hbs')
+
 app.get('', (req,res)=>{
-        res.send('hello world')
+        res.render('index')
 })
 app.get('/about', (req,res)=>{
-    res.send('hello from the about page world')
+    res.render('about')
 })
 app.get('/weather', (req,res)=>{
-    res.send('hello from weather page world')
+    res.render('hello from weather page world')
 })
 app.get('*', (req,res)=>{
-    res.send('404 error page')
+    res.render('404 error page')
 })
 
 app.listen(port,()=>{
