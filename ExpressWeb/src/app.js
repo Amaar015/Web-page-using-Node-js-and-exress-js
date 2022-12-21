@@ -1,13 +1,15 @@
 
 const express=require('express');
 const app=express();
-const port=process.env.PORT ||80;
+const port=process.env.PORT ||8000;
 const path =require('path');
+const hbs=require('hbs')
 
 const staticPath= path.join(__dirname,'../public')
+
 app.use(express.static(staticPath));
 
-app.set('view engine','hbs')
+   app.set('view engine','hbs')
 
 app.get('', (req,res)=>{
         res.render('index')

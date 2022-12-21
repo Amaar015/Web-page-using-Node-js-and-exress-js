@@ -138,3 +138,92 @@ i{
       text-align: center;
       padding:4px 0;
    } 
+
+
+
+   /* weather */
+ .input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+ }
+  form{
+    background: #05386b;
+    height: 6rem;
+    width: 50%;
+    align-items: center;
+    padding:1rem  2rem ;
+    border-radius: 20px; 
+  }
+  input{
+    width: 80%;
+    height: 3rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 2rem;
+    border: none;
+    outline: none;
+  }
+  .input form .btn{
+          height: 3rem;
+          width: 15%;
+          background-color: #5cdb95;
+          color: #05386b;
+          font-size:1rem;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+  }
+
+  .temprature{
+    display: flex;
+    flex-direction: column;
+    background-color: #05386b;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 20px;
+    box-shadow:10px 5px 5px black;
+    margin-top: 2rem;
+  }
+  .top-layer{
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin:1rem 2rem;
+    color: #fff;
+    background:#0d64bb;
+    width: 80%;
+    height: 4rem;
+    border-radius: 20px;
+  }
+  .main-layer{
+    display: flex;
+    flex-direction: column;
+    margin:1rem 2rem;
+  }
+  #city_name{
+    margin-top:-1rem;
+     font-size: 1.5rem;
+     color: #54aaff;
+     font-weight: bold;
+  }
+  .midle-layer{
+    display: flex;
+    flex-direction: row;
+    margin-top:1rem;
+    color: #fff;
+  }
+  .midle-layer #temp span{
+         font-size: 5rem;
+         color: #fff!important;
+  }
+  .midle-layer #temp{
+        font-size: 3.9rem;
+  }
+  #temp_status{
+        margin-left: 2rem;
+  }
